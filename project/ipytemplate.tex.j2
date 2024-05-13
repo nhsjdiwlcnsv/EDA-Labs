@@ -1,0 +1,14 @@
+% Default to the notebook output style
+((* set cell_style = 'base.tex.j2' *))
+% Inherit from the specified cell style.
+((* extends cell_style *))
+
+((* block packages *))
+((( super() ))) % load all other packages
+% For cyrillic symbols
+\usepackage[english, russian]{babel}
+((* endblock packages *))
+
+((* block docclass *))
+\documentclass{article}
+((* endblock docclass *))
